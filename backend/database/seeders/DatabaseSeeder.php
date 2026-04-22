@@ -10,6 +10,7 @@ class DatabaseSeeder extends Seeder
 {
     use WithoutModelEvents;
 
+<<<<<<< HEAD
     /**
      * Seed the application's database.
      */
@@ -17,4 +18,12 @@ class DatabaseSeeder extends Seeder
 {
     $this->call(ExerciceSeeder::class);
 }
+=======
+
+    public function run(): void
+    {
+       $this->call(ExerciceSeeder::class);
+       $this->call(FichierSeeder::class);
+    }
+>>>>>>> master
 }

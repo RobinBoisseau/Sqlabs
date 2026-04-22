@@ -1,9 +1,18 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
+<<<<<<< HEAD
   "newProjectRoot": "projects",
   "projects": {
     "temp": {
+=======
+  "cli": {
+    "packageManager": "npm"
+  },
+  "newProjectRoot": "projects",
+  "projects": {
+    "sqlabs-front": {
+>>>>>>> master
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -11,6 +20,7 @@
       "prefix": "app",
       "architect": {
         "build": {
+<<<<<<< HEAD
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/temp",
@@ -19,6 +29,11 @@
             "polyfills": [
               "zone.js"
             ],
+=======
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "src/main.ts",
+>>>>>>> master
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -26,10 +41,14 @@
                 "input": "public"
               }
             ],
+<<<<<<< HEAD
             "styles": [
               "src/styles.css"
             ],
             "scripts": []
+=======
+            "styles": ["src/styles.css"]
+>>>>>>> master
           },
           "configurations": {
             "production": {
@@ -56,6 +75,7 @@
           "defaultConfiguration": "production"
         },
         "serve": {
+<<<<<<< HEAD
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
@@ -63,10 +83,20 @@
             },
             "development": {
               "buildTarget": "temp:build:development"
+=======
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "sqlabs-front:build:production"
+            },
+            "development": {
+              "buildTarget": "sqlabs-front:build:development"
+>>>>>>> master
             }
           },
           "defaultConfiguration": "development"
         },
+<<<<<<< HEAD
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
         },
@@ -95,5 +125,12 @@
   },
   "cli": {
     "analytics": "906bbbff-7ad2-4668-837e-cd98a1197724"
+=======
+        "test": {
+          "builder": "@angular/build:unit-test"
+        }
+      }
+    }
+>>>>>>> master
   }
 }

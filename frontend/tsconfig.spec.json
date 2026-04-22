@@ -4,6 +4,7 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/spec",
+<<<<<<< HEAD
     "types": [
       "jasmine"
     ]
@@ -12,4 +13,9 @@
     "src/**/*.spec.ts",
     "src/**/*.d.ts"
   ]
+=======
+    "types": ["vitest/globals"]
+  },
+  "include": ["src/**/*.d.ts", "src/**/*.spec.ts"]
+>>>>>>> master
 }

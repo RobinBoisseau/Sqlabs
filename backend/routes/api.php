@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\Api\ExerciceController;
+use App\Http\Controllers\Api\FichierController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ExerciceController;
 
 Route::apiResource('exercices', ExerciceController::class);
+
+Route::apiResource('fichiers', FichierController::class);
